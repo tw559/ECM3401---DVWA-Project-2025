@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Task 3 - Weak Passwords!</h1>
+</header>
+
+<div class="content">
+  <p>In this task, you will learn about Weak Passwords, and the vulnerabilities they cause in authentication.</p>
+  <p>The goal for this task is to gain access to Xander's User ID.</p>
+  <p>Choose a section to navigate to:</p>
+
+  <nav>
+    <a href="{{ url_for('task3.forum3') }}" class="nav-button">Activity</a>
+    <a href="{{ url_for('task3.quiz3') }}" class="nav-button">Answer</a>
+    <a href="{{ url_for('index') }}" class="nav-button">Dashboard</a>
+  </nav>
+</div>
+<div class="content">
+  <nav>
+    <a href="{{ url_for('task3.info3') }}" class="nav-button">Information on Weak Passwords</a>
+  </nav>
+</div>
+
+</body>
+</html>

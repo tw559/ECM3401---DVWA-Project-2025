@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Injections</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #007BFF;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .primary {
+            background-color: #FF0000;
+        }
+        .secondary {
+            background-color: #00FF00;
+        }
+        .tertiary {
+            background-color: #0000FF;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>Broken Authorization</h1>
+</header>
+
+<div class="content">
+  <h2>What is Broken Authorization?</h2>
+  <p>Broken Authorization (also called Privilege Escalation) is when a system has insufficient authorization checks to
+  check whether a user should have access to a page or system.</p>
+  <p>In a secure system, users are permitted or denied access to certain sections or functions of the system based
+  on whatever privileges the user has been assigned. However, the designation system can get fairly complicated,
+  and result in inconsistent systems or improper privilege assignment, which can allow a malicious actor to gain more
+  access to a system than they should otherwise have.</p>
+  <p>There are two main forms of authorization control bypasses; horizontal and vertical control.</p>
+  <p>Horizontal Control Bypass is when an attacker gains access to another users account that contains equal privilege,
+  whereas Vertical Control Bypass is when an attacker gains access to an increased level of access, such as to
+  an admin account or page.</p>
+
+  <h2>Consequences of Broken Authorization</h2>
+  <p>If a system has a Broken Authorization Vulnerability, then the following issues could occur:</p>
+  <ul>
+    <li><b>Account Compromise:</b> Horizontal Control Bypass can allow an attacker to gain access to another user's account,
+    allowing them to perform actions on behalf of the user such as withdrawing money, sending messages or even
+    deleting the account.</li>
+    <li><b>Critical System Access:</b> Vertical Control Bypass allows an attacker to gain increased privileges, which
+    if they can continue to do so, can allow them to gain access to critical systems or even obtain full system control,
+    which can be devastating for the functioning and security of a system.</li>
+  </ul>
+
+
+  <h2>How to protect against Broken Authorization</h2>
+  <p>An access control matrix, which defines what users should have what privileges, alongside the use of role-based
+  access control are a basic step that developers can take in order to make sure that users only have the minimum
+  required permissions, as granting users superfluous privileges can be detrimental to the security of a system.</p>
+  <p>Additionally, making sure that access control is checked on every page of a web application makes sure that
+  users cannot access a page or a function simply by requesting direct access to that page.</p>
+
+
+  <h2>Example forms of Broken Authorization</h2>
+  <p>An example of Horizontal Control bypass is by typing in a user ID to an account page to directly access that user's
+  page, without having to log in.</p>
+  <blockquote>
+    <code>http://vulnerablesite.com/user/19000000</code> <br>
+    <code>http://vulnerablesite.com/user/19000001</code> <br>
+    <code>etc.</code>
+  </blockquote>
+  <p>An example of Vertical Control bypass would be if the admin page of a web application didn't require a user
+  to be logged in as an admin to visit it, allowing an attacker to effectively 'guess' what the URL of the admin
+  page and gain direct admin access.</p>
+
+
+  </div>
+
+
+<div class="content">
+  <nav>
+    <a href="{{ url_for('task4.main4') }}" class="nav-button">Done? Click here to return to the Broken Authorization Page</a>
+  </nav>
+</div>
+
+<footer>
+  <p>2025 DVWA Project</p>
+</footer>
+
+</body>
+</html>

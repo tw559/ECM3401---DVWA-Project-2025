@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .button {
+            display: block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to my 2025 Final Project:</h1>
+<h2>A Beginners Guide to DVWAs</h2>
+
+<div>
+    <p>This page aims to act as a beginners guide to common web application vulnerabilities, and attacks that may
+    be performed to exploit those vulnerabilities.</p>
+    <p>It's recommended to have basic knowledge of Python, SQL, HTML and JavaScript before attempting, but
+    Cybersecurity knowledge isn't necessary for these tasks.</p>
+    <p>In each task, you will have to find a flag, and then submit it in the answer section.</p>
+</div>
+
+<h3>Click a button to go to another page:</h3>
+
+<div class="button-container">
+    <a class="button" href="{{ url_for('task1.main1') }}">Go to Task 1 - SQL Injections</a>
+    <a class="button" href="{{ url_for('task2.main2') }}">Go to Task 2 - XSS Attacks</a>
+    <a class="button" href="{{ url_for('task3.main3') }}">Go to Task 3 - Weak Passwords</a>
+    <a class="button" href="{{ url_for('task4.main4') }}">Go to Task 4 - Broken Authorisation</a>
+    <a class="button" href="{{ url_for('task5.main5') }}">Go to Task 5 - The Final Task</a>
+    <!-- <a class="button" href="{{ url_for('set_cookie') }}">Reset your cookies</a> -->
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .button {
+            display: block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome to my 2025 Final Project:</h1>
+<h2>A Beginners Guide to DVWAs</h2>
+
+<div>
+  <p>Disclaimer: This page is intended to teach users to learn to recognise and exploit common vulnerabilities
+    in web applications. By clicking continue, you agree to only utilise these attacks on systems you have explicit
+    permission to do so on, and utilise any techniques learnt on this site in accordance with your local laws.
+    This site, nor it's creator are liable for any damages caused.</p>
+</div>
+
+<div class="button-container">
+  <a class="button" href="{{ url_for('index') }}">Continue</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Injections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #007BFF;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .primary {
+            background-color: #FF0000;
+        }
+        .secondary {
+            background-color: #00FF00;
+        }
+        .tertiary {
+            background-color: #0000FF;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Weak Passwords</h1>
+</header>
+
+<div class="content">
+    <h2>What is a Weak Password?</h2>
+    <p>
+        Weak Passwords are a common security vulnerability present in many applications and services. They are commonly caused by either
+        poor security knowledge on behalf of the user, or poor implementation/design of security protocols in an organisation. They exist
+        when a password to an application or account easily guessed, either because it contains personal identifying information, or is
+        easily guessed.
+    </p>
+    <p>
+        Attacks that rely on weak passwords are often either Brute Force Attacks or Social Engineering Attacks.
+    </p>
+    <p>
+        A Brute Force Attack is one that simply just iterates through every possible password. While extremely computationally expensive and often
+        not particularly viable for breaking passwords with any degree of complexity, with even 'Password123'  taking a while for basic brute
+        force algorithm to crack, more advanced strategies have been developed, such as 'Dictionary Attacks', which only test passwords in accordance
+        with whatever dataset the algorithm uses. Traditionally, this was a dictionary, hence the name, but modern datasets utilise repositories of
+        previously obtained passwords from data breaches.
+    </p>
+    <p>
+        Unlike Brute Force Attacks, which engage solely with the application, Social Engineering Attacks instead either convince them to hand over
+        the password, or to guess their password based around information gained about the user such as their birthday, pets or family.
+    </p>
+
+    <h2>Consequences of Cross-Site Scripting Vulnerabilities</h2>
+    <p>If a web application is vulnerable to an XSS attack, it can lead to a variety of issues, such as:</p>
+    <ul>
+        <li><b>Account Compromise:</b> If a malicious actor can guess a user's password, then that account is compromised which can allow the
+        attacker to gain access to sensitive documents and information.</li>
+        <li><b>Identity Theft:</b> Once an attacker has access to a users account, they can use that to impersonate the user and send messages, withdraw
+        money from banking applications or many other options. </li>
+        <li><b>Password Reuse:</b> When a password has been 'cracked', it's often added to a database of known passwords, which can further impact
+        the user if they have reused their passwords across any applications. </li>
+    </ul>
+
+    <h2>How to make sure your Passwords are more secure</h2>
+    <p>No password is ever truly secure, as hypothetically an attacker could get extremely lucky and guess the password the first time.</p>
+    <p>However, making sure that your password is sufficiently complex can do a lot to increase the security of your password. OWASP recommends a
+    minimum password length of 12 characters, and having the password contain a variety of types of characters (uppercase, lower case, symbols).</p>
+    <p>Users should also be educated on good security practices, such as not sharing passwords, making sure to change your passwords regularly and not
+    reusing passwords.</p>
+    <p>Finally, making use of Mutlifactor Authentication can help to further increase the security, as attackers will need to bypass multiple
+    forms of authentication.</p>
+
+
+    <h2>Example forms of XSS Attack</h2>
+    <p>Social Engineering attacks will often be performed by someone claiming to be a person in a position of authority. An example is given below:</p>
+    <blockquote>“Hi, this is Alex from IT. We’re investigating a potential security breach and need to verify your identity to reset your email password.
+        Can you please confirm your current password so we can proceed?”</blockquote>
+    <p>As seen, 'Alex' is claiming to be someone from a position of authority so they gain your trust, and presenting an urgent issue that will cause
+    the user to panic and hopefully ignore any security protocols in place.</p>
+    <p>Brute Force Algorithms instead work by iterating through either a dataset (such as with Dictionary Attacks) or just through every possible option.</p>
+</div>
+
+
+<div class="content">
+    <nav>
+        <a href="{{ url_for('task3.main3') }}" class="nav-button">Done? Click here to return to the Weak Password Page</a>
+    </nav>
+</div>
+
+<footer>
+    <p>2025 DVWA Project</p>
+</footer>
+
+</body>
+</html>

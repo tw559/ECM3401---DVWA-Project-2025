@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Users</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            margin: 30px auto;
+            width: 60%;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin-bottom: 8px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: #e2e6ea;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            width: 40%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .close {
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>Admin - Manage Users</h1>
+</header>
+
+<div class="container">
+  <h2>Registered Users</h2>
+  <ul id="userList">
+    {% for username, details in users.items() %}
+    <li onclick="showUser('{{ username }}', '{{ details.email }}', '{{ details.role }}')">{{ details.username }}</li>
+    {% endfor %}
+  </ul>
+  <a href="{{ url_for('task4.admin4_home') }}" class="back-link">&larr; Back to Dashboard</a>
+</div>
+
+<!-- Modal -->
+<div id="userModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>User Information</h2>
+    <p><strong>User ID:</strong> <span id="modalUsername"></span></p>
+    <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+    <p><strong>Role:</strong> <span id="modalRole"></span></p>
+  </div>
+</div>
+
+<script>
+    function showUser(username, email, role) {
+        document.getElementById('modalUsername').innerText = username;
+        document.getElementById('modalEmail').innerText = email;
+        document.getElementById('modalRole').innerText = role;
+        document.getElementById('userModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('userModal').style.display = 'none';
+    }
+
+    // Close modal if clicking outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById('userModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
+

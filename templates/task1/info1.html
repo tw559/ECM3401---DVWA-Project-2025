@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Injections</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #007BFF;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .primary {
+            background-color: #FF0000;
+        }
+        .secondary {
+            background-color: #00FF00;
+        }
+        .tertiary {
+            background-color: #0000FF;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>SQL Injections</h1>
+</header>
+
+<div class="content">
+  <h2>What is an SQL Injection?</h2>
+  <p>
+    SQL Injections are a form of cyber-attack, where a malicious actor can 'inject' an SQL Query into a database via input fields (like login or description fields).
+    These allow the malicious actors to read data from the database, execute operations on the database or bypass authentication protocols, such as passwords.
+  </p>
+
+  <h2>Consequences of SQL Injections</h2>
+  <p>If a program is vulnerable to SQL Injections, this can have a variety of consequences, such as:</p>
+  <ul>
+    <li><b>Confidentiality:</b> SQL Databases often hold sensitive data, so if a database can be exploited, the confidentiality of the information is at risk.</li>
+    <li><b>Authentication:</b> If SQL queries are used to check usernames and passwords, it is possible to construct a query that lets someone log in to an account without knowing the password.</li>
+    <li><b>Authorisation:</b> If authorisation information, such as permissions or access controls, are stored in an SQL database, then it may be possible for a malicious actor to edit that information.</li>
+    <li><b>Integrity:</b> Similarly, information may be able to be deleted if SQL Injections are a valid attack vector.</li>
+  </ul>
+
+  <h2>How to protect against SQL Injections</h2>
+  <p>SQL Injections are accomplished by putting meta characters (such as ' or =) into a data input, which causes the SQL Query to fail to operate as intended, and parse
+  the input as a part of the query, allowing someone to manipulate the query for personal gain.</p>
+  <p>This flaw is dependent on the fact that SQL Queries can't innately differentiate between what's part of the query and what's part of the input. As such, a common method to protect against
+  SQL Injection attacks is to utilise 'parametrized statements', where the user input is handled outside the query, and then passed to the query in a 'sanitised' manner.</p>
+  <p>Another way to mitigate SQL Injection attacks is by not allowing users to input meta characters into their inputs. This has the downside of not being 100% effective, as well as
+  being an inconvenience to the end user. However, alongside other forms of protection, this form of input validation can act as an additional level of security.</p>
+  <p>Finally, a design or structural decision that can help mitigate SQL Injection attacks is the 'principle of least privilege', whereby users should only have as many permissions as
+  strictly necessary. This is a factor that should largely be implemented in any form of design, as granting users extraneous permissions may allow users to perform unintended actions.</p>
+
+
+  <h2>Example forms of SQL Injections</h2>
+  <p>A common form of SQL Injection is <code>' OR 'a'='a'</code>, which is a category of SQL Injections that cause a clause to always evaluate as true.</p>
+  <p>Another common form of SQL Injection is <code>'');</code>, which effectively acts as a 'halt' to the current query and allows the user to then input an additional query, which may
+  allow them to manipulate SQL database information.</p>
+  </div>
+
+
+<div class="content">
+  <nav>
+    <a href="{{ url_for('task1.main1') }}" class="nav-button">Done? Click here to return to the SQL Injection Page</a>
+  </nav>
+</div>
+
+<footer>
+  <p>2025 DVWA Project</p>
+</footer>
+
+</body>
+</html>

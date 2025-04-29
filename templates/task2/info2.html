@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Injections</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #007BFF;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .primary {
+            background-color: #FF0000;
+        }
+        .secondary {
+            background-color: #00FF00;
+        }
+        .tertiary {
+            background-color: #0000FF;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>Cross-Site Scripting (XSS)</h1>
+</header>
+
+<div class="content">
+  <h2>What is Cross-Site Scripting?</h2>
+  <p>
+    Cross-Site Scripting or XSS attacks are a form of injection attack in which a malicious actor uses a web application
+    to send malicious code, such as a browser side script, which allows them to get the application to run the script,
+    which can then be made to run on a different user's session, gain access to cookies or session tokens, or to manipulate
+    the contents of an HTML page.
+  </p>
+  <p>
+    Cross-Site Scripting generally comes in two forms: Reflected XSS attacks, and Stored XSS attacks.
+  </p>
+  <p>
+    Reflected XSS attacks occur when the injected script is part of the request sent to the server, most commonly done by
+    containing the script in a URL or other link. When the user clicks on the link, the code is sent to the web application, and is
+    then 'reflected' back to the user's browser.
+  </p>
+  <p>
+    Stored XSS attacks are when the malicious script is stored on the servers in some way, either in a database, a forum, a blog, etc.
+    When the victim calls upon the malicious script, it is then executed and run on the victim's browser.
+  </p>
+
+  <h2>Consequences of Cross-Site Scripting Vulnerabilities</h2>
+  <p>If a web application is vulnerable to an XSS attack, it can lead to a variety of issues, such as:</p>
+  <ul>
+    <li><b>Account Compromise:</b> Using XSS attacks, a malicious actor can gain access to a users session cookie, which can allow the actor to
+    hijack the users session through a session hijacking attack.</li>
+    <li><b>Malware:</b> XSS attacks can be used to install malware, such a Trojan Horse programs, which can severely compromise a users devices.</li>
+    <li><b>Information Manipulation:</b> By manipulating the HTML contents, an attacker can edit the information on a page, which can have
+    serious consequences, such as impacting a companies stock prices or modifying a pharmaceutical sites dosage information. </li>
+  </ul>
+
+  <h2>How to protect against XSS</h2>
+  <p>As with many forms of injection attacks, a layered approach to protection is advised.</p>
+  <p>One of the main methods to protect against XSS attacks is 'escaping' the user input, replacing characters such as <, & and " with their
+  'safer' counterparts, which prevents the inputs from being treated as HTML or JavaScript code.</p>
+  <p>Another method that should be implemented is Input Validation and Sanitization. Input Validation is the method of making sure that inputs
+    conform to the expected formats, such as usernames and email addresses. The recommended form of this is called 'Allowlisting',
+    which is defining what forms the input are allowed to take, and denying anything that fails to conform to that mould. The alternative
+    is 'Denylisting', which is significantly weaker, as malicious actors can find ways to circumvent the 'banned' parameters, as well as often
+    causing false positives.</p>
+  <p>Finally, making sure to mark cookies as HttpOnly can help 'hide' them from JavaScript, which can help protect them from XSS attacks.</p>
+
+
+  <h2>Example forms of XSS Attack</h2>
+  <p>The most basic version of an XSS injection is <code>'&lt;script&gt;alert('XSS');&lt;/script&gt;'</code>. If a web application reflects this input and executes
+  the script, then the browser will pop up an alert which says 'XSS'. This demonstrates that the input field is vulnerable to an XSS injection,
+  and the attacker could then replace the alert() script with more harmful code, or grab cookies.</p>
+  <p>Link based attacks are the other primary way of performing an XSS attack, where an url such as <code>https://example.com/
+    search?q=&lt;script&gt;alert('XSS')&lt;/script&gt;</code> will cause the HTMl script of a page to load q as the script, which will then cause
+  an alert to pop up. Similarly to the injection shown above, the alert() script can be replaced with more harmful code.</p>
+  <p>Going in to detail on the more malicious code scripts that can be utilised is beyond the scope of this application, but basically any
+  JavaScript code can be utilised, and applications with poor security implementation that store passwords and such in plain sight can be
+  vulnerable to simple calls like <code>'&lt;script&gt;alert(document.cookies);&lt;/script&gt;'</code></p>
+</div>
+
+
+<div class="content">
+  <nav>
+    <a href="{{ url_for('task2.main2') }}" class="nav-button">Done? Click here to return to the Cross-Site Scripting Page</a>
+  </nav>
+</div>
+
+<footer>
+  <p>2025 DVWA Project</p>
+</footer>
+
+</body>
+</html>

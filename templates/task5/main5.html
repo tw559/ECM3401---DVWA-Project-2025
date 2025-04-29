@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Task 5 - The Final Task!</h1>
+</header>
+
+<div class="content">
+  <p>In the final task, you will use the skills you have learned from the previous tasks to attempt to gain access to
+  the flag hidden somewhere in the activity.</p>
+  <p>Choose a section to navigate to:</p>
+
+  <nav>
+    <a href="{{ url_for('task5.forum5') }}" class="nav-button">Activity</a>
+    <a href="{{ url_for('task5.quiz5') }}" class="nav-button">Answer</a>
+    <a href="{{ url_for('index') }}" class="nav-button">Dashboard</a>
+  </nav>
+</div>
+
+</body>
+</html>

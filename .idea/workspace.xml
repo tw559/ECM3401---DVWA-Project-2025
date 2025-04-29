@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4cabf097-f144-4fe4-9703-77740239a14d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DVWA Project Test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_init_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/task1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/task2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/task3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/task4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/task5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/disclaimer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task1/answer1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task1/dashboard1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task1/info1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task1/login1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task1/main1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task1/quiz1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task2/answer2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task2/info2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task2/login2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task2/main2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task2/quiz2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task3/answer3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task3/dashboard3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task3/fakeblog3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task3/info3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task3/login3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task3/main3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task3/quiz3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task4/admin4_home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task4/admin4_users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task4/answer4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task4/dashboard4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task4/ferror4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task4/info4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task4/main4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task4/quiz4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task5/admin5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task5/answer5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task5/dashboard5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task5/flag5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task5/forum5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task5/login5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task5/main5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/task5/quiz5.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2uGNUSnR9lPoNddNVOWmWy4GBs4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/theow/DVWA Project Test/templates/task5&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\theow\DVWA Project Test\templates\task5" />
+      <recent name="C:\Users\theow\DVWA Project Test\templates\task4" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app">
+    <configuration name="_init_db" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DVWA Project Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_init_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DVWA Project Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python._init_db" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cabf097-f144-4fe4-9703-77740239a14d" name="Changes" comment="" />
+      <created>1741870983245</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741870983245</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

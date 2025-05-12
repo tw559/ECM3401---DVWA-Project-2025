@@ -5,55 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cabf097-f144-4fe4-9703-77740239a14d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DVWA Project Test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_init_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/task1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/task2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/task3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/task4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/task5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/disclaimer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task1/answer1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task1/dashboard1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task1/info1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task1/login1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task1/main1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task1/quiz1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task2/answer2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task2/info2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task2/login2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task2/main2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task2/quiz2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task3/answer3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task3/dashboard3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task3/fakeblog3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task3/info3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task3/login3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task3/main3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task3/quiz3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task4/admin4_home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task4/admin4_users.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task4/answer4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task4/dashboard4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task4/ferror4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task4/info4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task4/main4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task4/quiz4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task5/admin5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task5/answer5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task5/dashboard5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task5/flag5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task5/forum5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task5/login5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task5/main5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/task5/quiz5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/task1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

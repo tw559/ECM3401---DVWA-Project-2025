@@ -135,7 +135,7 @@ def quiz1():
     return render_template('/task1/quiz1.html')
 
 
-flag_1 = "249114368"  # This is the 'answer' for task 1. Editing this will change the required input for /task1/answer1/
+flag_1 = "137727843"  # This is the 'answer' for task 1. Editing this will change the required input for /task1/answer1/
 
 
 @task1_bp.route('/task1/answer', methods=['POST'])

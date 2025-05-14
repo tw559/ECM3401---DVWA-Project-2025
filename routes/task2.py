@@ -19,7 +19,6 @@ users = {
 
 
 # Sets the flag to a specific user's password
-# TODO Potentially consider randomising the user if I have time
 flag_2_user = 'Fabian5778'
 flag_2 = users[flag_2_user]
 
@@ -113,6 +112,7 @@ def register2():
             message = "Registration successful! Please log in."
             return redirect(url_for('task2.login2'))
 
+    # Due to lack of intended use of this view, a template hasn't been implemented, instead utilising an HTML string
     return render_template_string('''
         <h2>Register</h2>
         <form method="post">
@@ -135,6 +135,7 @@ def answer2():
     correct_answer = flag_2
     user_answer = request.form.get("answer", "")
 
+    # Verifies that the user input matches the flag for this task
     is_correct = user_answer == correct_answer
 
     return render_template("/task2/answer2.html", is_correct=is_correct)

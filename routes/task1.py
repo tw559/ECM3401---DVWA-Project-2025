@@ -49,7 +49,6 @@ def register1():
     """
     An extremely basic registration view that allows users to insert users into the SQL database. Vulnerable to SQL
     Injection attacks
-    TODO Check whether this view can be removed
     :return:
     """
     if request.method == 'POST':
